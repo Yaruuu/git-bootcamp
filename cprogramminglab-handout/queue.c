@@ -22,13 +22,7 @@
   Create empty queue.
   Return NULL if could not allocate space.
 */
-queue_t *q_new()
-{
-    queue_t *q =  malloc(sizeof(queue_t));
-    /* What if malloc returned NULL? */
-    q->head = NULL;
-    return q;
-}
+
 
 /* Free all storage used by queue */
 void q_free(queue_t *q)
